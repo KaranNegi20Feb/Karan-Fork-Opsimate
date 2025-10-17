@@ -118,6 +118,7 @@ docker run -d \
   --name opsimate-backend \
   --rm \
   -p 3001:3001 \
+  -e HOST=0.0.0.0
   opsimate/backend
 
 ```
@@ -129,6 +130,7 @@ docker run -d \
   --name opsimate-frontend \
   --rm \
   -p 8080:8080 \
+  -e HOST=0.0.0.0
   opsimate/frontend
 
 ```
